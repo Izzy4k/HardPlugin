@@ -12,6 +12,11 @@ namespace HardPlugin.Events.Internal
         public void OnRoundStart()
         {
             HardPlugin.MineController.CreateMines(HardPlugin.Instance.Config.CountMines);
+            
+            foreach(var player in Player.List)
+            {
+                HardPlugin.ItemController.OnSpawnCoin(player);
+            }
         }
     }
 }

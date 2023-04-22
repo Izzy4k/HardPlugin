@@ -16,6 +16,10 @@ namespace HardPlugin
 
         public static MineController MineController => LazyMineController.Value;
 
+        private static readonly Lazy<ItemController> LazyItemController = new Lazy<ItemController>(() => new ItemController());
+
+        public static ItemController ItemController => LazyItemController.Value;
+
         private HardServer server;
 
         public override void OnEnabled()

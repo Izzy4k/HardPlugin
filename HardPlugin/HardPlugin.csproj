@@ -44,11 +44,21 @@
     <Reference Include="Exiled.API">
       <HintPath>C:\Users\Acer\AppData\Roaming\EXILED\Plugins\dependencies\Exiled.API.dll</HintPath>
     </Reference>
+    <Reference Include="Exiled.CustomItems">
+      <HintPath>C:\Users\Acer\AppData\Roaming\EXILED\Plugins\Exiled.CustomItems.dll</HintPath>
+    </Reference>
+    <Reference Include="Exiled.CustomRoles">
+      <HintPath>C:\Users\Acer\AppData\Roaming\EXILED\Plugins\Exiled.CustomRoles.dll</HintPath>
+    </Reference>
     <Reference Include="Exiled.Events">
       <HintPath>C:\Users\Acer\AppData\Roaming\EXILED\Plugins\Exiled.Events.dll</HintPath>
     </Reference>
     <Reference Include="Exiled.Loader">
       <HintPath>C:\Users\Acer\AppData\Roaming\EXILED\Plugins\Exiled.Loader.dll</HintPath>
+    </Reference>
+    <Reference Include="Exiled.Permissions, Version=6.1.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Acer\AppData\Roaming\EXILED\Plugins\Exiled.Permissions.dll</HintPath>
     </Reference>
     <Reference Include="Mirror">
       <HintPath>..\..\..\steam\steamapps\common\SCP Secret Laboratory Dedicated Server\SCPSL_Data\Managed\Mirror.dll</HintPath>
@@ -77,8 +87,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Api\Mine.cs" />
+    <Compile Include="Api\MyCoin.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="Events\Internal\HardServer.cs" />
+    <Compile Include="Features\ItemController.cs" />
     <Compile Include="Features\MineController.cs" />
     <Compile Include="HardPlugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

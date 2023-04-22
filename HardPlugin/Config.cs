@@ -11,5 +11,8 @@ namespace HardPlugin
 
         [Description("Количество мин. По умолчанию: 2")]
         public int CountMines { get; set; } = 2;
+
+        [Description("Радиус монетки. По умолчанию: 5")]
+        public int RadiusCoin { get; set; } = 5;
     }
 }
